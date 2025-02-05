@@ -16,7 +16,7 @@ export function HomePage() {
   return (
     <div
       id="home"
-      className="flex min-h-screen flex-col items-center justify-center space-y-8 px-6 pt-36 text-center"
+      className="mb-36 flex min-h-screen flex-col items-center justify-center space-y-8 px-6 pt-36 text-center font-semibold"
     >
       <Image src={avatar} alt="Foto de perfil" className="w-40 rounded-full" />
       <h1 className="text-4xl font-bold sm:text-5xl">
@@ -25,7 +25,7 @@ export function HomePage() {
         Desenvolvedor Full-Stack
       </h1>
 
-      <div className="mx-auto mt-4 max-w-3xl text-lg text-foreground sm:text-xl">
+      <div className="mx-auto mt-4 max-w-3xl text-lg font-semibold text-foreground sm:text-xl">
         Como desenvolvedor Full-Stack, sou apaixonado por construir soluções
         inovadoras que resolvem problemas reais. Com 4 anos de experiência, me
         especializo na criação de aplicações rápidas, escaláveis e com foco na
@@ -33,7 +33,7 @@ export function HomePage() {
         utilizando as mais modernas tecnologias e frameworks.
       </div>
 
-      <div className="mx-auto mt-4 max-w-3xl text-lg text-foreground sm:text-xl">
+      <div className="mx-auto mt-4 max-w-3xl text-lg font-semibold text-foreground sm:text-xl">
         Se você busca alguém para transformar suas ideias em produtos digitais
         de alto impacto, você está no lugar certo!
       </div>

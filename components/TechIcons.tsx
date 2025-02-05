@@ -30,7 +30,7 @@ const ICONS = [
 
 export function TechIcons() {
   return (
-    <div className="mt-6 grid grid-cols-2 justify-center gap-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+    <div className="mt-6 grid grid-cols-2 justify-center gap-8 font-semibold sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
       {ICONS.map(({ Component, color, label }, index) => (
         <div
           key={index}

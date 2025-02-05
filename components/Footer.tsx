@@ -6,10 +6,12 @@ export function Footer() {
   return (
     <footer
       id="contact"
-      className="bg-primary p-8 px-4 text-primary-foreground shadow-lg dark:bg-secondary dark:text-secondary-foreground md:px-40"
+      className="bg-primary p-8 text-primary-foreground shadow-lg dark:bg-secondary dark:text-secondary-foreground md:px-40"
     >
-      <div className="container flex flex-col items-start px-4 text-left md:px-20 lg:px-40">
-        <h2 className="mb-4 text-left text-2xl sm:text-3xl">Sobre</h2>
+      <div className="container mx-auto flex flex-col items-center px-4 text-start font-semibold md:px-20 lg:px-40">
+        <h2 className="mb-4 flex items-center justify-center text-2xl sm:text-3xl">
+          Sobre
+        </h2>
         <p className="mb-4 max-w-3xl text-left text-base sm:text-lg md:text-xl">
           Desenvolvedor de Software com mais de 4 anos de experiência na entrega
           de soluções robustas e de alta qualidade. Especialista em React, React
