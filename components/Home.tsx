@@ -44,7 +44,7 @@ export function HomePage() {
         <Button
           variant="light"
           className="border-rose-600 bg-rose-500 px-6 py-2 font-bold text-white transition-colors hover:bg-rose-600 hover:text-white"
-          onClick={() => window.open('https://wa.me/22999293439', '_blank')}
+          onClick={() => window.open('https://wa.me/5522999293439', '_blank')}
         >
           Contato
         </Button>
