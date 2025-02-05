@@ -7,6 +7,13 @@ import avatar from '../public/avatar.png';
 import { TechIcons } from './TechIcons';
 
 export function HomePage() {
+  const handleDownloadCv = () => {
+    const link = document.createElement('a');
+    link.href = '/vitornunes.pdf';
+    link.download = 'vitornunes.pdf';
+    link.click();
+  };
+
   return (
     <div
       id="home"
@@ -37,12 +44,14 @@ export function HomePage() {
         <Button
           variant="secondary"
           className="border-rose-600 px-6 py-2 font-bold transition-colors hover:bg-rose-600 hover:text-white"
+          onClick={() => window.open('https://wa.me/22999293439', '_blank')}
         >
-          Entre em contato
+          Chamar no WhatsApp
         </Button>
         <Button
           variant="light"
           className="border-rose-600 bg-rose-500 px-6 py-2 font-bold text-white transition-colors hover:bg-rose-600 hover:text-white"
+          onClick={handleDownloadCv}
         >
           Baixar CV
         </Button>

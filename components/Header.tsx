@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { Moon, Sun } from 'phosphor-react';
-import Link from 'next/link';
 
 type UseDarkModeReturn = readonly [boolean, () => void];
 
