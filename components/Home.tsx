@@ -6,7 +6,10 @@ import avatar from '../public/avatar.png';
 
 export function HomePage() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center space-y-8 px-6 text-center">
+    <div
+      id="home"
+      className="flex min-h-screen flex-col items-center justify-center space-y-8 px-6 text-center"
+    >
       <Image src={avatar} alt="Foto de perfil" className="w-40" />
       <h1 className="text-4xl font-bold sm:text-5xl">
         Eu transformo <br />

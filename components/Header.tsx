@@ -35,10 +35,10 @@ function useDarkMode(): UseDarkModeReturn {
 export default function Header() {
   const [isDarkMode, toggleDarkMode]: UseDarkModeReturn = useDarkMode();
 
-  const handleScrollToExperience = () => {
-    const experienceSection = document.getElementById('experience');
-    if (experienceSection) {
-      experienceSection.scrollIntoView({ behavior: 'smooth' });
+  const handleScrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -46,21 +46,25 @@ export default function Header() {
     <header className="hover:bg-primary-dark fixed top-0 z-10 flex w-full items-center justify-between bg-primary p-4 text-primary-foreground shadow-lg transition-colors duration-300 ease-in-out dark:bg-secondary dark:text-secondary-foreground">
       <div className="flex-grow"></div>
       <nav className="flex space-x-4">
-        <Link href="/" className="text-lg">
-          Home
-        </Link>
-        <Link href="/projects" className="text-lg">
-          Projects
-        </Link>
         <button
-          onClick={handleScrollToExperience}
+          onClick={() => handleScrollToSection('home')}
           className="cursor-pointer text-lg"
         >
-          Experience
+          Home
         </button>
-        <Link href="/contact" className="text-lg">
-          Contact
-        </Link>
+
+        <button
+          onClick={() => handleScrollToSection('experience')}
+          className="cursor-pointer text-lg"
+        >
+          Experiencia
+        </button>
+        <button
+          onClick={() => handleScrollToSection('contact')}
+          className="cursor-pointer text-lg"
+        >
+          Contato
+        </button>
       </nav>
       <div className="flex flex-grow justify-end">
         <button
