@@ -16,7 +16,7 @@ export function HomePage() {
   return (
     <div
       id="home"
-      className="flex min-h-screen flex-col items-center justify-center space-y-8 px-6 pt-10 text-center"
+      className="flex min-h-screen flex-col items-center justify-center space-y-8 px-6 pt-36 text-center"
     >
       <Image src={avatar} alt="Foto de perfil" className="w-40 rounded-full" />
       <h1 className="text-4xl font-bold sm:text-5xl">
