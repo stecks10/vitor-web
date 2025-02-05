@@ -26,7 +26,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
       alt={imgAlt}
       width={48}
       height={48}
-      className="h-12 w-12"
+      className="h-12 w-12 rounded-lg"
     />
     <div className="space-y-3">
       <h3 className="text-2xl font-bold">{title}</h3>
@@ -52,7 +52,7 @@ export function Experience() {
 
         <div className="mx-auto max-w-4xl space-y-10">
           <ExperienceItem
-            imgSrc="https://media.licdn.com/dms/image/v2/C4E0BAQGxqnPQkRXOEw/company-logo_100_100/company-logo_100_100/0/1644954559095?e=1746662400&v=beta&t=BDomzxLyaf7HpPsYZ1OnWxmAzx3e4hY4z9LUJkweCuo"
+            imgSrc="/7comm.jpeg"
             imgAlt="7comm"
             title="Desenvolvedor de software"
             company="7COMm - People and tech to transform"
@@ -67,7 +67,7 @@ export function Experience() {
 
         <div className="mx-auto mt-20 max-w-4xl space-y-10">
           <ExperienceItem
-            imgSrc="https://media.licdn.com/dms/image/v2/C4E0BAQGGcI8EsaaV2Q/company-logo_100_100/company-logo_100_100/0/1630609762106?e=1746662400&v=beta&t=A2qC4RF8-P7R-2-nkwXLt4Ho-HFWAiPlhVWKcLN11t8"
+            imgSrc="/app7.jpeg"
             imgAlt="app7"
             title="Desenvolvedor de software"
             company="App7 Sistemas"
