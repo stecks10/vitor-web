@@ -1,9 +1,8 @@
 'use client';
 
-import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { Divide, Moon, Sun } from 'phosphor-react';
-import { Separator } from '@radix-ui/react-separator';
+import { Moon, Sun } from 'phosphor-react';
+import Link from 'next/link';
 
 type UseDarkModeReturn = readonly [boolean, () => void];
 
@@ -36,6 +35,13 @@ function useDarkMode(): UseDarkModeReturn {
 export default function Header() {
   const [isDarkMode, toggleDarkMode]: UseDarkModeReturn = useDarkMode();
 
+  const handleScrollToExperience = () => {
+    const experienceSection = document.getElementById('experience');
+    if (experienceSection) {
+      experienceSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className="hover:bg-primary-dark fixed top-0 z-10 flex w-full items-center justify-between bg-primary p-4 text-primary-foreground shadow-lg transition-colors duration-300 ease-in-out dark:bg-secondary dark:text-secondary-foreground">
       <div className="flex-grow"></div>
@@ -46,9 +52,12 @@ export default function Header() {
         <Link href="/projects" className="text-lg">
           Projects
         </Link>
-        <Link href="/experience" className="text-lg">
+        <button
+          onClick={handleScrollToExperience}
+          className="cursor-pointer text-lg"
+        >
           Experience
-        </Link>
+        </button>
         <Link href="/contact" className="text-lg">
           Contact
         </Link>
