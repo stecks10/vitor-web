@@ -44,7 +44,7 @@ export default function Header() {
   return (
     <header className="hover:bg-primary-dark fixed top-0 z-10 flex w-full items-center justify-between bg-primary p-4 text-primary-foreground shadow-lg transition-colors duration-300 ease-in-out dark:bg-secondary dark:text-secondary-foreground">
       <div className="flex-grow"></div>
-      <nav className="flex space-x-4">
+      <nav className="flex gap-14">
         <button
           onClick={() => handleScrollToSection('home')}
           className="cursor-pointer text-lg hover:text-rose-400 dark:hover:text-rose-600"

@@ -5,12 +5,12 @@ import {
   SiTailwindcss,
   SiNestjs,
   SiPostgresql,
+  SiDocker,
+  SiSass,
 } from 'react-icons/si';
 import { TbBrandReactNative } from 'react-icons/tb';
 
 const ICONS = [
-  { Component: FaHtml5, color: 'text-orange-500', label: 'HTML' },
-  { Component: FaCss3Alt, color: 'text-blue-500', label: 'CSS' },
   { Component: FaJs, color: 'text-yellow-500', label: 'JavaScript' },
   { Component: SiTypescript, color: 'text-blue-600', label: 'TypeScript' },
   { Component: FaReact, color: 'text-cyan-500', label: 'React' },
@@ -24,6 +24,8 @@ const ICONS = [
   { Component: FaNodeJs, color: 'text-green-500', label: 'Node.js' },
   { Component: SiNestjs, color: 'text-red-500', label: 'NestJS' },
   { Component: SiPostgresql, color: 'text-blue-800', label: 'PostgreSQL' },
+  { Component: SiDocker, color: 'text-blue-500', label: 'Docker' },
+  { Component: SiSass, color: 'text-pink-500', label: 'Sass' },
 ];
 
 export function TechIcons() {

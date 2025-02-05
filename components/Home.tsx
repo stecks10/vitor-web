@@ -41,7 +41,7 @@ export function HomePage() {
 
       <TechIcons />
 
-      <div className="mt-6 flex items-center justify-center space-x-4">
+      <div className="flex items-center justify-center space-x-4 pt-9">
         <Button
           variant="light"
           className="border-rose-600 bg-rose-500 px-6 py-2 font-bold text-white transition-colors hover:bg-rose-600 hover:text-white"
