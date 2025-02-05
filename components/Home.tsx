@@ -3,8 +3,8 @@
 import { Button } from './ui/button';
 import Image from 'next/image';
 import avatar from '../public/avatar.png';
-
 import { TechIcons } from './TechIcons';
+import { WhatsappLogo } from 'phosphor-react';
 
 export function HomePage() {
   const handleDownloadCv = () => {
@@ -21,7 +21,8 @@ export function HomePage() {
     >
       <Image src={avatar} alt="Foto de perfil" className="w-40 rounded-full" />
       <h1 className="text-4xl font-bold sm:text-5xl">
-        Olá, eu sou <span className="text-rose-600">Vitor Nunes</span> <br />
+        Olá, eu sou <span className="text-rose-600">Vitor N Nascimento</span>{' '}
+        <br />
         Desenvolvedor Full-Stack
       </h1>
 
@@ -42,11 +43,11 @@ export function HomePage() {
 
       <div className="mt-6 flex items-center justify-center space-x-4">
         <Button
-          variant="secondary"
-          className="border-rose-600 px-6 py-2 font-bold transition-colors hover:bg-rose-600 hover:text-white"
+          variant="light"
+          className="border-rose-600 bg-rose-500 px-6 py-2 font-bold text-white transition-colors hover:bg-rose-600 hover:text-white"
           onClick={() => window.open('https://wa.me/22999293439', '_blank')}
         >
-          Chamar no WhatsApp
+          Contato
         </Button>
         <Button
           variant="light"

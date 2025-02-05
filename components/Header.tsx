@@ -47,20 +47,20 @@ export default function Header() {
       <nav className="flex space-x-4">
         <button
           onClick={() => handleScrollToSection('home')}
-          className="cursor-pointer text-lg"
+          className="cursor-pointer text-lg hover:text-rose-400 dark:hover:text-rose-600"
         >
           Home
         </button>
 
         <button
           onClick={() => handleScrollToSection('experience')}
-          className="cursor-pointer text-lg"
+          className="cursor-pointer text-lg hover:text-rose-400 dark:hover:text-rose-600"
         >
           Experiencia
         </button>
         <button
           onClick={() => handleScrollToSection('contact')}
-          className="cursor-pointer text-lg"
+          className="cursor-pointer text-lg hover:text-rose-400 dark:hover:text-rose-600"
         >
           Contato
         </button>
