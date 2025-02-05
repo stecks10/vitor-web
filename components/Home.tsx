@@ -4,7 +4,6 @@ import { Button } from './ui/button';
 import Image from 'next/image';
 import avatar from '../public/avatar.png';
 import { TechIcons } from './TechIcons';
-import { WhatsappLogo } from 'phosphor-react';
 
 export function HomePage() {
   const handleDownloadCv = () => {

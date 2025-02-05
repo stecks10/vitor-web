@@ -1,4 +1,4 @@
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from 'react-icons/fa';
+import { FaJs, FaReact, FaNodeJs } from 'react-icons/fa';
 import {
   SiTypescript,
   SiAngular,

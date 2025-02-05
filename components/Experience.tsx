@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 
 interface ExperienceItemProps {
   imgSrc: string;
@@ -20,7 +21,13 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   description,
 }) => (
   <div className="flex items-start space-x-6">
-    <img src={imgSrc} alt={imgAlt} className="h-12 w-12" />
+    <Image
+      src={imgSrc}
+      alt={imgAlt}
+      width={48}
+      height={48}
+      className="h-12 w-12"
+    />
     <div className="space-y-3">
       <h3 className="text-2xl font-bold">{title}</h3>
       <p className="font-semibold text-gray-400">
